@@ -1,5 +1,5 @@
 body{
-    width: 1440px;
+   
     font-family: 'Raleway', sans-serif;
     font-family: 'Roboto', sans-serif;
 }
@@ -8,7 +8,7 @@ body{
     
 }
 
-.header_nav{
+.header-nav{
     display: flex;
     
 }
@@ -27,7 +27,13 @@ body{
     
 }
 
-.logo_white{
+.logo:hover, .logo:focus{
+    
+    box-sizing: border-box;
+    border: 1px solid #000000;
+}
+
+.logo-white{
     font-weight: 800;
     font-size: 18px;
     line-height: 24px;
@@ -35,14 +41,14 @@ body{
     color: #2E2F42;
 }
 
-.header_title{
+.header-title{
     /* display: flex;
     justify-content: center;
     align-items: center; */
     list-style: none;
 }
 
-.header_link{
+.header-link{
     font-weight: 500;
     font-size: 16px;
     width: 48px;
@@ -53,11 +59,15 @@ body{
     color: #2E2F42;
 }
 
-.header_contacts{
+.header-link:hover, .header-link:focus{
+    color: #4D5AE5;
+}
+
+.header-contacts{
     list-style: none;
 }
 
-.header_mail{
+.header-mail{
     text-decoration: none;
     padding-right: 40px;
     font-weight: 400;
@@ -67,7 +77,11 @@ body{
     color: #434455;
 }
 
-.header_tel{
+.header-mail:hover, .header-mail:focus{
+color: #4D5AE5;
+}
+
+.header-tel{
     text-decoration: none;
     font-weight: 400;
     font-size: 16px;
@@ -75,13 +89,17 @@ body{
     letter-spacing: 0.02em;
     color: #434455;
 }
+
+.header-tel:hover, .header-tel:focus{
+    color: #4D5AE5;
+}
 /* header end */
 
-.hero_section{
+.hero-section{
     background-image: url(../images/hero.jpg);
 }
 
-.hero_title{
+.hero-title{
     font-weight: 700;
     font-size: 56px;
     line-height: 60px;
@@ -90,7 +108,7 @@ body{
 
 }
 
-.hero_tapy{
+.hero-tapy{
     padding: 16px 32px;
     gap: 10px;
     background: #4D5AE5;
@@ -99,19 +117,23 @@ body{
     color: #FFFFFF;
     
 }
+
+.hero-tapy:hover, .hero-tapy:focus, .hero-tapy:active{
+    background: #0f1fcb;
+}
 /* hero end */
 
 .advantages{
     
 }
 
-.advantages_title{
+.advantages-title{
    display: none;
    
    
 }
 
-.advantages_block{
+.advantages-block{
     list-style: none;
     
 }
@@ -124,7 +146,7 @@ body{
     color: #2E2F42;
 }
 
-.block_desc{
+.block-desc{
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
@@ -132,7 +154,7 @@ body{
     color: #434455;
 }
 
-.cases_title{
+.cases-title{
     font-weight: 700;
     font-size: 36px;
     line-height: 40px;
@@ -140,12 +162,16 @@ body{
     color: #2E2F42;
 }
 
-.cases_image{
+.cases-image{
     list-style: none;
 }
 /* block cases end */
 
-.team_title{
+.team{
+    background-color: #E7E9FC;
+}
+
+.team-title{
     font-weight: 700;
     font-size: 36px;
     line-height: 40px;
@@ -153,11 +179,14 @@ body{
     color: #2E2F42;
 }
 
-.team_cards{
+.team-cards{
     list-style: none;
+   
 }
 
-.team_name{
+
+
+.team-name{
     font-weight: 500;
     font-size: 20px;
     line-height: 24px;
@@ -165,7 +194,7 @@ body{
     color: #2E2F42;
 }
 
-.team_desc{
+.team-desc{
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
@@ -177,7 +206,7 @@ body{
     background-image: url(../images/hero.jpg);
 }
 
-.footer_logo{
+.footer-logo{
     text-decoration: none;
     font-weight: 800;
     font-size: 18px;
@@ -186,7 +215,13 @@ body{
     color: #4D5AE5;
 }
 
-.logo_studio{
+.footer-logo:hover, .footer-logo:focus{
+    
+    box-sizing: border-box;
+    border: 1px solid #000000;
+}
+
+.logo-studio{
     text-decoration: none;
     font-weight: 800;
     font-size: 18px;
@@ -195,7 +230,7 @@ body{
     color: #F4F4FD;
 }
 
-.footer_desc{
+.footer-desc{
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
@@ -215,39 +250,41 @@ body{
 
 }
 
-.portfolio_title{
+.portfolio-title{
     display: none;
 }
 
-.portfolio_button{
+.portfolio-button{
     width: 69px;
     height: 48px;
+        /* padding: 12px 24px; */
     background: #F4F4FD;
     border: 1px solid #E7E9FC;
     border-radius: 4px;
     color: #4D5AE5;
 }
 
-.portfolio_button:hover{
+.portfolio-button:hover, .portfolio-button:focus{
     background: #404BBF;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
     color: #FFFFFF;
 }
 
-.portfolio_cards{
+.cards-nav{
+    
 
 }
 
-.cards_menu{
+.cards-menu{
     list-style: none;
 }
 
-.card_img{
+.card-img{
     
 }
 
-.card_title{
+.card-title{
     font-weight: 500;
     font-size: 20px;
     line-height: 24px;
@@ -255,7 +292,7 @@ body{
     color: #2E2F42;
 }
 
-.card_desc{
+.card-desc{
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
