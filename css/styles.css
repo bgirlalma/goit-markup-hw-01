@@ -58,7 +58,7 @@ body{
 }
 
 .header-link:hover, .header-link:focus{
-   
+   color: #4D5AE5;
 }
 
 .header-contacts{
@@ -79,7 +79,7 @@ body{
 }
 
 .header-mail:hover, .header-mail:focus{
-
+    color: #434455;
 }
 
 .header-tel{
@@ -94,7 +94,7 @@ body{
 }
 
 .header-tel:hover, .header-tel:focus{
-   
+   color: #434455;
 }
 /* header end */
 
@@ -127,7 +127,7 @@ body{
 }
 
 .hero-tapy:hover, .hero-tapy:focus{
-    background-color: #4D5AE5;
+   background-color: #404BBF; 
 
 }
 /* hero end */
