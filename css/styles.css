@@ -1,8 +1,8 @@
 body{
-    
-    font-family: 'Raleway', sans-serif;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
+    color: #2E2F42;
+    background-color: #FFFFFF;
 }
 
 .header{
@@ -31,7 +31,7 @@ body{
    
 }
 
-.logo:focus{
+.logo:hover, .logo:focus{
 
 }
 
@@ -57,7 +57,7 @@ body{
     color: #2E2F42;
 }
 
-.header-link:hover{
+.header-link:hover, .header-link:focus{
    
 }
 
@@ -78,7 +78,7 @@ body{
     color: #434455;
 }
 
-.header-mail:hover{
+.header-mail:hover, .header-mail:focus{
 
 }
 
@@ -93,7 +93,7 @@ body{
     color: #434455;
 }
 
-.header-tel:hover{
+.header-tel:hover, .header-tel:focus{
    
 }
 /* header end */
@@ -127,8 +127,7 @@ body{
 }
 
 .hero-tapy:hover, .hero-tapy:focus{
-    background-color: #a1a7ed;
-    color: #030c75;
+    background-color: #4D5AE5;
 
 }
 /* hero end */
@@ -148,7 +147,7 @@ body{
     
 }
 
-.block_title{
+.block-title{
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
