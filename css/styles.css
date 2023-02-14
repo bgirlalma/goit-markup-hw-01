@@ -5,6 +5,15 @@ body{
     background-color: #FFFFFF;
 }
 
+:root{
+    --primary-font: 'Roboto', sans-serif;
+    --secondary-font: 'Raleway', sans-serif;
+    --primary-size: 36px;
+    --secondary-size: 16px;
+    --main-color: #2E2F42;
+    --secondary-color: #434455;
+}
+
 .header{
     
 }
@@ -15,7 +24,7 @@ body{
 }
 
 .logo{
-    font-family: 'Raleway';
+    font-family: var(--secondary-font);
     font-style: normal;
     font-weight: 800;
     font-size: 18px;
@@ -36,7 +45,7 @@ body{
 }
 
 .logo-white{
-    color: #2E2F42;
+    color: var(--main-color);
 }
 
 
@@ -54,7 +63,7 @@ body{
     line-height: 1.5;
     text-decoration: none;
     padding-right: 40px;
-    color: #2E2F42;
+    color: var(--main-color);
 }
 
 .header-link:hover, .header-link:focus{
@@ -75,11 +84,11 @@ body{
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #434455;
+    color: var(--secondary-color);
 }
 
 .header-mail:hover, .header-mail:focus{
-    color: #434455;
+    color: #363cbb;
 }
 
 .header-tel{
@@ -90,11 +99,11 @@ body{
     line-height: 1.5;
     letter-spacing: 0.02em;
     text-decoration: none;
-    color: #434455;
+    color: var(--secondary-color);
 }
 
 .header-tel:hover, .header-tel:focus{
-   color: #434455;
+   color: #363cbb;
 }
 /* header end */
 
@@ -152,7 +161,7 @@ body{
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    color: #2E2F42;
+    color: var(--main-color);
 }
 
 .block-desc{
@@ -160,7 +169,7 @@ body{
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #434455;
+    color: var(--secondary-color);
 }
 
 .cases-title{
@@ -168,7 +177,7 @@ body{
     font-size: 36px;
     line-height: 1.1;
     letter-spacing: 0.02em;
-    color: #2E2F42;
+    color: var(--main-color);
 }
 
 .cases-image{
@@ -185,7 +194,7 @@ body{
     font-size: 36px;
     line-height: 1.1;
     letter-spacing: 0.02em;
-    color: #2E2F42;
+    color: var(--main-color);
 }
 
 .team-cards{
@@ -200,7 +209,7 @@ body{
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    color: #2E2F42;
+    color: var(--main-color);
 }
 
 .team-desc{
@@ -208,7 +217,7 @@ body{
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #434455;
+    color: var(--secondary-color);
 }
 
 .footer{
@@ -303,7 +312,7 @@ body{
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    color: #2E2F42;
+    color: var(--main-color);
 }
 
 .card-desc{
@@ -311,5 +320,5 @@ body{
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #434455;
+    color: var(--secondary-color);
 }
