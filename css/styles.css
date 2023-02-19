@@ -1,8 +1,19 @@
+html{
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
 body{
     font-family: 'Roboto', sans-serif;
     font-style: normal;
-    color: #2E2F42;
     background-color: #FFFFFF;
+    margin: 0;
+    padding: 0;
 }
 
 :root{
@@ -15,17 +26,24 @@ body{
 }
 
 .header{
-    
+   margin: 24px 0;
+}
+
+.container{
+    width: 1130px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .header-nav{
     display: flex;
+    margin: 0;
+    
     
 }
 
 .logo{
     font-family: var(--secondary-font);
-    font-style: normal;
     font-weight: 800;
     font-size: 18px;
     padding: 0px;
@@ -33,11 +51,9 @@ body{
     letter-spacing: 0.03em;
     color: #4D5AE5;
     text-decoration: none;
-    display: flex;
-    align-items: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-   
+    text-align: center;
 }
 
 .logo:hover, .logo:focus{
@@ -52,17 +68,19 @@ body{
 
 .header-title{
     display: flex;
-    justify-content: center;
-    align-items: center;
     list-style: none;
+    margin: 0;
+    margin-left: 76px;
 }
 
 .header-link{
+    margin: 0 auto;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     text-decoration: none;
     padding-right: 40px;
+    text-align: center;
     color: var(--main-color);
 }
 
@@ -71,6 +89,12 @@ body{
 }
 
 .header-contacts{
+    display: inline-block;
+    padding: 0;
+}
+
+.contacts{
+    margin: 0;
     list-style: none;
     
 }
@@ -78,7 +102,6 @@ body{
 .header-mail{
     text-decoration: none;
     font-family: 'Roboto';
-    font-style: normal;
     padding-right: 40px;
     font-weight: 400;
     font-size: 16px;
@@ -93,7 +116,6 @@ body{
 
 .header-tel{
     font-family: 'Roboto';
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
@@ -107,20 +129,32 @@ body{
 }
 /* header end */
 
+/* hero start */
+
 .hero-section{
+    margin: 0;
     background-image: url(../images/hero.jpg);
+    
+}
+
+.hero-wrapper{
+    text-align: center;
 }
 
 .hero-title{
+    margin: 0;
+    width: 500px;
+    padding-top: 180px;
     font-weight: 700;
     font-size: 56px;
     line-height: 1.1;
     letter-spacing: 0.02em;
+    text-align: center;
     color: #FFFFFF;
-
 }
 
 .hero-tapy{
+    margin-top: 50px;
     padding: 16px 32px;
     gap: 10px;
     background: #4D5AE5;
@@ -141,22 +175,34 @@ body{
 }
 /* hero end */
 
+/* advantages start */
+
 .advantages{
-    
+    margin: 0;
 }
 
 .advantages-title{
    display: none;
    
-   
+}
+
+.advantages-wrapper{
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding-top: 130px;
 }
 
 .advantages-block{
     list-style: none;
+    padding: 0 25px;
     
 }
 
+
 .block-title{
+    margin-bottom: 10px;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -165,46 +211,78 @@ body{
 }
 
 .block-desc{
+    
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--secondary-color);
 }
+/*Advantages end */
+
+/* Cases start */
+
+.cases{
+
+}
 
 .cases-title{
+    text-align: center;
+    margin-top: 130px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.1;
     letter-spacing: 0.02em;
     color: var(--main-color);
+}
+
+.cases-wrapper{
+    margin: 70px 0 0 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .cases-image{
     list-style: none;
 }
-/* block cases end */
+/* Cases end */
 
+/* Team start */
 .team{
     background-color: #F4F4FD;
+    
 }
 
 .team-title{
+    margin-top: 240px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.1;
     letter-spacing: 0.02em;
+    text-align: center;
     color: var(--main-color);
+}
+
+.team-wrapper{
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .team-cards{
     list-style: none;
-   
+    background: #FFFFFF;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
+    
 }
 
+.team-image{
 
+}
 
 .team-name{
+    margin: 30px 0 10px 0;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -213,15 +291,24 @@ body{
 }
 
 .team-desc{
+    margin-bottom: 30px;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--secondary-color);
 }
+/* Team end */
 
+/* Footer start */
 .footer{
+    margin-top: 120px;
     background-image: url(../images/hero.jpg);
+}
+
+.footer-wrapper{
+    max-width: 265px;
+    padding: 100px 0 100px 0;
 }
 
 .footer-logo{
@@ -232,6 +319,7 @@ body{
     line-height: 1.3;
     letter-spacing: 0.03em;
     color: #4D5AE5;
+ 
     text-decoration: none;
     display: flex;
     align-items: center;
