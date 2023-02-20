@@ -12,8 +12,16 @@ body{
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     background-color: #FFFFFF;
+}
+
+h1, h2, h3, h4, h5, h6, p{
     margin: 0;
     padding: 0;
+}
+
+a{
+    margin: 0;
+    padding: 0; 
 }
 
 :root{
@@ -30,9 +38,12 @@ body{
 }
 
 .container{
+    margin-left: auto;
+    margin-right: auto;
     width: 1130px;
     padding-left: 15px;
     padding-right: 15px;
+    outline: 2px solid red;
 }
 
 .header-nav{
@@ -89,43 +100,31 @@ body{
 }
 
 .header-contacts{
-    display: inline-block;
     padding: 0;
 }
 
 .contacts{
     margin: 0;
     list-style: none;
+    display: flex;
     
 }
 
-.header-mail{
-    text-decoration: none;
+.contacts-active{
     font-family: 'Roboto';
-    padding-right: 40px;
+    margin: 0;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: var(--secondary-color);
+    color: var(--secondary-color); 
+
+    margin: 0 auto;
+    text-decoration: none;
 }
 
-.header-mail:hover, .header-mail:focus{
+.contacts-active:hover, .contacts-active:focus{
     color: #363cbb;
-}
-
-.header-tel{
-    font-family: 'Roboto';
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    text-decoration: none;
-    color: var(--secondary-color);
-}
-
-.header-tel:hover, .header-tel:focus{
-   color: #363cbb;
 }
 /* header end */
 
@@ -134,7 +133,6 @@ body{
 .hero-section{
     margin: 0;
     background-image: url(../images/hero.jpg);
-    
 }
 
 .hero-wrapper{
@@ -142,7 +140,7 @@ body{
 }
 
 .hero-title{
-    margin: 0;
+    /* margin: 0; */
     width: 500px;
     padding-top: 180px;
     font-weight: 700;
@@ -160,13 +158,13 @@ body{
     background: #4D5AE5;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
     color: #FFFFFF;
     cursor: pointer;
+    /* text-align: center; */
 }
 
 .hero-tapy:hover, .hero-tapy:focus{
@@ -183,7 +181,6 @@ body{
 
 .advantages-title{
    display: none;
-   
 }
 
 .advantages-wrapper{
@@ -223,7 +220,7 @@ body{
 /* Cases start */
 
 .cases{
-
+    
 }
 
 .cases-title{
@@ -240,17 +237,18 @@ body{
     margin: 70px 0 0 0;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    
 }
 
 .cases-image{
     list-style: none;
+    margin-right: 25px;
 }
 /* Cases end */
 
 /* Team start */
 .team{
     background-color: #F4F4FD;
-    
 }
 
 .team-title{
@@ -274,7 +272,8 @@ body{
     background: #FFFFFF;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
-    
+    margin-right: 25px;
+   
 }
 
 .team-image{
@@ -325,7 +324,7 @@ body{
     align-items: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-   
+    margin-bottom: 15px;
 }
 
 
@@ -359,10 +358,12 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 95px;
+    margin-bottom: 75px;
 }
 
 .portfolio-button{
-    
+    margin-right: 25px;
     cursor: pointer;
     background: #F4F4FD;
     border: 1px solid #E7E9FC;
@@ -383,16 +384,31 @@ body{
     color: #FFFFFF;
 }
 
+.cards-colum{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+}
+
 .cards-menu{
     list-style: none;
+    background: #FFFFFF;
+    border: 1px solid #E7E9FC;
+    margin: 0 auto;
+    margin-bottom: 45px;
+    
 }
+
 
 .cards-link{
     text-decoration: none;
 }
 
 .card-img{
-    
+    background: linear-gradient(0deg, rgba(77, 90, 229, 0.1), rgba(77, 90, 229, 0.1)), url(4074365.jpg);
+    background-blend-mode: soft-light, normal;
+    mix-blend-mode: normal;
+    margin-bottom: 30px;
 }
 
 .card-title{
@@ -401,6 +417,7 @@ body{
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--main-color);
+    margin-bottom: 10px;
 }
 
 .card-desc{
@@ -409,4 +426,5 @@ body{
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--secondary-color);
+    margin-bottom: 30px;
 }
