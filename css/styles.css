@@ -48,9 +48,8 @@ a{
 
 .header-nav{
     display: flex;
-    margin: 0;
-    
-    
+    align-items: center;
+    margin-right: auto;
 }
 
 .logo{
@@ -80,52 +79,57 @@ a{
 .header-title{
     display: flex;
     list-style: none;
-    margin: 0;
-    margin-left: 76px;
+}
+
+.header-title .item + .item {
+    margin-left: 40px;
 }
 
 .header-link{
-    margin: 0 auto;
+    padding-top: 24px;
+    padding-bottom: 24px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     text-decoration: none;
-    padding-right: 40px;
     text-align: center;
     color: var(--main-color);
 }
+
 
 .header-link:hover, .header-link:focus{
    color: #4D5AE5;
 }
 
 .header-contacts{
-    padding: 0;
+    display: block;
+    /* margin-right: auto; */
 }
 
 .contacts{
-    margin: 0;
     list-style: none;
     display: flex;
-    
+}
+
+.contacts .item + .item {
+    margin-left: 40px;
 }
 
 .contacts-active{
     font-family: 'Roboto';
-    margin: 0;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--secondary-color); 
-
-    margin: 0 auto;
     text-decoration: none;
 }
 
 .contacts-active:hover, .contacts-active:focus{
     color: #363cbb;
 }
+
+
 /* header end */
 
 /* hero start */
