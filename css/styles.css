@@ -35,6 +35,7 @@ a{
 
 .header{
    margin: 24px 0;
+   
 }
 
 .container{
@@ -102,8 +103,8 @@ a{
 }
 
 .header-contacts{
-    display: block;
-    /* margin-right: auto; */
+    display: flex;
+    margin-right: auto;
 }
 
 .contacts{
