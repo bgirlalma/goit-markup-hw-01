@@ -60,6 +60,8 @@ a{
     display: flex;
     align-items: center;
     margin-right: auto;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .logo{
@@ -97,8 +99,6 @@ a{
 }
 
 .header-link{
-    padding-top: 24px;
-    padding-bottom: 24px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -114,7 +114,8 @@ a{
 .header-contacts{
     display: flex;
     margin-right: 0;
-    
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .contacts{
@@ -128,6 +129,7 @@ a{
 
 .contacts-active_mail{
     font-family: 'Roboto';
+    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
@@ -138,6 +140,7 @@ a{
 
 .contacts-active_tel{
     font-family: 'Roboto';
+    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
@@ -175,20 +178,23 @@ a{
     color: #FFFFFF;
 }
 
-.hero-tapy{
-    margin-top: 50px;
+
+.hero-tapy {
     padding: 16px 32px;
-    gap: 10px;
+    margin-top: 48px;
+    cursor: pointer;
     background: #4D5AE5;
+    border: 0;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+
+    font-family: 'Roboto';
+    font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
     color: #FFFFFF;
-    cursor: pointer;
-    text-align: center;
 }
 
 .hero-tapy:hover, .hero-tapy:focus{
@@ -202,6 +208,8 @@ a{
 
 .advantages{
     margin: 0;
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 .advantages-title{
@@ -213,7 +221,7 @@ a{
     padding: 0;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    padding-top: 130px;
+
 }
 
 .advantages-block{
@@ -245,11 +253,12 @@ a{
 
 .cases{
     margin: 0;
+    padding-bottom: 120px;
 }
 
 .cases-title{
     text-align: center;
-    margin-top: 130px;
+   
     font-weight: 700;
     font-size: 36px;
     line-height: 1.1;
@@ -280,13 +289,12 @@ a{
 
 /* Team start */
 .team{
+    padding-top: 120px;
     padding-bottom: 120px;
     background-color: #F4F4FD;
 }
 
 .team-title{
-    margin-top: 120px;
-    padding-top: 120px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.1;
@@ -386,7 +394,7 @@ a{
 
 /* portfolio section start */
 .portfolio{
-
+    padding-top: 96px;
 }
 
 .portfolio-title{
@@ -398,8 +406,7 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 95px;
-    margin-bottom: 75px;
+    
 }
 
 .portfolio-button{
@@ -425,16 +432,15 @@ a{
 }
 
 .cards-wrapper{
-    
+    margin: 0;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    
+    padding-top: 77px;
 }
 
 .cards-menu{
     list-style: none;
     margin: 0 auto;
-    margin-bottom: 43px;
     margin-right: 25px;
 }
 
