@@ -245,22 +245,25 @@ a{
 }
 
 .advantages-wrapper{
+    min-width: 264px;
     margin: 0;
     padding: 0;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-
 }
 
 .advantages-block{
     list-style: none;
-    padding: 0 25px;
-    
+    padding-right: 24px;
+}
+
+.advantages-block:last-child{
+    padding-right: 0;
 }
 
 
 .block-title{
-    margin-bottom: 10px;
+    margin-bottom: 8px;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -362,7 +365,7 @@ a{
 
 .team-name{
     text-align: center;
-    margin: 30px 0 10px 0;
+    margin: 32px 0 8px 0;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -372,7 +375,7 @@ a{
 
 .team-desc{
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 32px;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
@@ -477,14 +480,14 @@ a{
     margin-top: 0;
     padding-left: 0;
     padding-right: 0;
+    padding-bottom: 120px;
     display: flex;
     flex-wrap: wrap;
     gap: 48px;
-    column-gap: 24px; 
+    column-gap: 24px;
 }
 
 .cards-wrapper:last-child{
-    padding-bottom: 120px;
     margin-bottom: 0;
 }
 
@@ -522,7 +525,7 @@ a{
 }
 
 .card-desc{
-    margin-top: 10pxmar;
+    margin-top: 8px;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
