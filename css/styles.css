@@ -189,13 +189,13 @@ a{
     padding-top: 190px;
     padding-bottom: 190px;
     text-align: center;
-    background-color: var(--main-color);
-}
 
-.wrapper{
     max-width: 1440px;
     height: 600px;
-    background-image: url(../images/hero.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+    rgba(46, 47, 66, 0.7)),
+    url(../images/hero.jpg);
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -252,7 +252,7 @@ a{
 }
 
 .advantages-wrapper{
-    min-width: 264px;
+    width: 264px;
     margin: 0;
     padding: 0;
     display: grid;
@@ -270,13 +270,16 @@ a{
 
 .advantages-icon{
     min-width: 264px;
+    height: 112px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     background: #F4F4FD;
     border-radius: 4px;
     display: flex;
     align-items: center;
     justify-content: center;
+
     padding: 24px 0;
+    margin-bottom: 8px;
 }
 
 .block-title{
@@ -398,6 +401,10 @@ a{
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--secondary-color);
+}
+
+.use{
+   
 }
 /* Team end */
 
